@@ -1,29 +1,9 @@
 //===============================================
-//Archivo: caso4.cpp
+//Archivo: main.cpp
 ////===============================================
 //// Curso de programación en C/C++
-//// Profesor: Freddy Rojas.
-//// Material de curso licencia GPL version 2.0
+//// Estudiante: Juan Pablo Elizondo Calvo B52485
 ////===============================================
-//// No se admiten responsabilidades por el
-//// uso del material que no sea el planteado
-//// inicialmente para material didactico.
-////===============================================
-//#include <stdio.h>
-//#include <iostream>
-//#include "funciones.h"
-//using namespace std;
-//int variable_global=10;
-//
-//extern float suma(float,float);
-//
-//int main(void)
-//{
-//   int variable_global=30;
-//   cout << "La suma  de 20.3 y 40.2 da " << suma(20.3,40.2) << endl;
-//   variable_global++;
-//   getchar();
-//}//________________________________________
 
 #include <stdio.h>
 #include <iostream>
@@ -31,33 +11,41 @@
 #include <math.h>
 #include "clases.h"
 #include <cmath>
+#include <string.h>
 using namespace std;
-int variable_global=10;
 
-extern float suma(float,float);
 
 int main(void)
 {
-    float val_in = 1;
+    float val_in = 98;
     float error_requerido = 0.001;
-    funcion funcion1;
 
 
-   cout << "Establezca valor de prueba inicial:\n";
-//   cin >> val_in;
-//   cout << "Ingrese el error maximo deseado:\n";
-//   cin >> error_requerido;
+//    funcion funcion1;
 
-//   funcion1.setpunto_inicial(val_in);
-   funcion1.setvalor_funcion(val_in);
-   funcion1.setvalor_derivada();
-   funcion1.seterror_requerido(error_requerido);
-   funcion1.setpunto_inicial(val_in);
+    grado3 hiperbolica;
+    grado2 parabola;
+    grado1 lineal;
 
-   cout << funcion1.getpunto_actual()<<endl;
-   cout << "El valor de la funcion es "<<funcion1.getvalor_funcion()<<endl;
-   cout << "El valor de la derivada es "<<funcion1.getvalor_derivada()<<endl;
-   funcion1.setpunto_actual();
-   cout << "El cero esta en " <<funcion1.getpunto_actual()<<endl;
+   cout <<"\n=================Nueva funcion======================\n"<<endl;
+   lineal.setfunc_tipo("lineal");
+   lineal.setparametros(0,0,3,7);
+   lineal.setpunto_inicial(val_in);
+   lineal.seterror_requerido(error_requerido);
+   lineal.setpunto_actual();
+
+   cout <<"\n=================Nueva funcion======================\n"<<endl;
+   parabola.setfunc_tipo("cuadratica");
+   parabola.setparametros(0,1,9,3);
+   parabola.setpunto_inicial(val_in);
+   parabola.seterror_requerido(error_requerido);
+   parabola.setpunto_actual();
+
+   cout <<"\n=================Nueva funcion======================\n"<<endl;
+   hiperbolica.setfunc_tipo("hiperbolica");
+   hiperbolica.setparametros(1,2,3,4);
+   hiperbolica.setvalor_funcion(val_in);
+   hiperbolica.seterror_requerido(error_requerido);
+   hiperbolica.setpunto_actual();
 
 }//________________________________________
