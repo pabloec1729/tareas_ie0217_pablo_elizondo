@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1663315854 source:c:\users\pabloec\documents\git\tareas_ie0217_pablo_elizondo\metodo_numerico\main.cpp
+1663457674 source:c:\users\pabloec\documents\git\tareas_ie0217_pablo_elizondo\metodo_numerico\main.cpp
 	<stdio.h>
 	<iostream>
 	<cstdlib>
@@ -8,5 +8,5 @@
 	<cmath>
 	<string.h>
 
-1663318458 c:\users\pabloec\documents\git\tareas_ie0217_pablo_elizondo\metodo_numerico\clases.h
+1663457764 c:\users\pabloec\documents\git\tareas_ie0217_pablo_elizondo\metodo_numerico\clases.h
 
